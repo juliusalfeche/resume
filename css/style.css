@@ -280,6 +280,7 @@ p { color: var(--text-muted); }
 .slider-card-item.bg-audio { background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 20%, rgba(15, 23, 42, 0.75) 100%), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; }
 .slider-card-item.bg-quakes { background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 20%, rgba(15, 23, 42, 0.75) 100%), url('https://images.unsplash.com/photo-1590055531615-f16d36ffe8ec?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; }
 .slider-card-item.bg-resume { background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 20%, rgba(15, 23, 42, 0.75) 100%), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80') center/cover no-repeat; }
+.slider-card-item.jahub { background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 20%, rgba(15, 23, 42, 0.75) 100%), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
 
 .slider-card-item[class*="bg-"] h3 { color: #ffffff; }
 .slider-card-item[class*="bg-"] p { color: #cbd5e1; }
