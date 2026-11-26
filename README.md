@@ -26,10 +26,10 @@ Official portfolio and interactive resume of **Julius Alfeche**, a Data and Oper
 
 ```
 resume/
-├── index.html           the whole page (all the text lives here)
+├── index.html           the whole page
 ├── 404.html             friendly "page not found"
 ├── resume.pdf           the downloadable resume
-├── CNAME                custom domain (keep this file!)
+├── CNAME                custom domain
 ├── robots.txt, sitemap.xml
 └── assets/
     ├── css/style.css    all styling, palette at the top
@@ -49,14 +49,7 @@ resume/
 - **Text, projects, endorsements, jobs:** edit `index.html`. Each section is a clearly marked block.
 - **Years of experience / industries:** change the `data-count` numbers in the "Highlights" list near the top. The project and endorsement counts update by themselves.
 - **Colors:** change the variables at the top of `assets/css/style.css`.
-- **New resume PDF:** replace `resume.pdf` (keep the same name so old links keep working).
 - The footer year updates itself.
-
-To preview locally (needs a web server, not a double-click):
-
-```
-python3 -m http.server 8000
-```
 
 ## Credits
 
