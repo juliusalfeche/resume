@@ -1,517 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Julius Alfeche</title>
-    <meta name="description" content="Official portfolio of Julius Alfeche, a versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows and optimizing operations.">
-    <meta name="keywords" content="Julius Alfeche, Data Analyst, Operations Analyst, Excel Dashboard Creation, Data Reporting, Cebu City, Philippines, Portfolio">
-    <meta name="author" content="Julius Alfeche">
-    <link rel="canonical" href="https://juliusalfeche.com/">
-    <link rel="icon" type="image/png" href="img/jahub.png">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://juliusalfeche.com/">
-    <meta property="og:title" content="Julius Alfeche">
-    <meta property="og:description" content="Official portfolio of Julius Alfeche, a versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows and optimizing operations.">
-    <meta property="og:image" content="https://juliusalfeche.com/img/jahub.png">
-    
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://juliusalfeche.com/">
-    <meta property="twitter:title" content="Julius Alfeche | Expert Data Analyst">
-    <meta property="twitter:description" content="Official portfolio of Julius Alfeche, a versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows.">
-    <meta property="twitter:image" content="https://juliusalfeche.com/img/jahub.png">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <script>
-        (function() {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-            if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        })();
+    <title>Julius Alfeche | Data &amp; Operations Analyst</title>
+    <meta name="description" content="Official portfolio of Julius Alfeche, a versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows and optimizing operations.">
+    <meta name="author" content="Julius Alfeche">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://juliusalfeche.com/">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/icon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Julius Alfeche">
+    <meta property="og:url" content="https://juliusalfeche.com/">
+    <meta property="og:title" content="Julius Alfeche | Data &amp; Operations Analyst">
+    <meta property="og:description" content="Official portfolio of Julius Alfeche, a versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows and optimizing operations.">
+    <meta property="og:image" content="https://juliusalfeche.com/assets/img/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Julius Alfeche, Data and Operations Analyst">
+    <meta property="og:locale" content="en_PH">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Julius Alfeche | Data &amp; Operations Analyst">
+    <meta name="twitter:description" content="Official portfolio of Julius Alfeche, a versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows.">
+    <meta name="twitter:image" content="https://juliusalfeche.com/assets/img/og-cover.png">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Julius Alfeche",
+            "url": "https://juliusalfeche.com/",
+            "image": "https://juliusalfeche.com/assets/img/og-cover.png",
+            "jobTitle": "Data and Operations Analyst",
+            "worksFor": { "@type": "Organization", "name": "OfficePartners360 Inc." },
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "Asian College of Technology" },
+            "address": { "@type": "PostalAddress", "addressLocality": "Cebu City", "addressCountry": "PH" },
+            "knowsAbout": ["Data analysis", "Excel dashboards", "Process optimization", "Compliance monitoring", "Web development"],
+            "sameAs": [
+                "https://linkedin.com/in/juliusalfeche/",
+                "https://github.com/juliusalfeche",
+                "https://bsky.app/profile/juliusalfeche.com",
+                "https://www.facebook.com/JuliusAlfeche"
+            ]
+        }
     </script>
 
-    <noscript>
-        <style>
-            .accordion-content, .nested-accordion-content { max-height: none !important; opacity: 1 !important; transform: none !important; }
-            .content-inner, .nested-content-inner { opacity: 1 !important; transform: translateY(0) !important; }
-            .chevron-icon, .nested-chevron { display: none !important; }
-            .accordion-trigger, .nested-accordion-trigger { cursor: default; border-bottom: 1px solid var(--border-color); }
-        </style>
-    </noscript>
-
-    <script src="js/main.js" defer></script>
+    <!-- Sets the light/dark theme before the page paints, so there is no flash. -->
+    <script src="assets/js/theme.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/js/main.js"></script>
 </head>
-<body>
+<body id="top">
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.900c.9.7 1.500 1.500 1.500 2.600h4c0-1.100.6-1.900 1.500-2.600A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.500 7.200L4 20l1-4.200A8 8 0 1 1 21 12z"/></symbol>
+    <symbol id="i-checklist" viewBox="0 0 24 24"><path d="M4 6l1.500 1.500L8 5M4 12l1.500 1.500L8 11M4 18l1.500 1.500L8 17M11 6h9M11 12h9M11 18h9"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5-10-5zM6 11.5V16c0 1.500 3 3 6 3s6-1.500 6-3v-4.500M22 9v6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.500A8 8 0 0 1 9.500 4 8 8 0 1 0 20 14.500z"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.700 6.300a4 4 0 0 0-5 5L3 18v3h3l6.700-6.700a4 4 0 0 0 5-5l-2.400 2.400-2.600-.7-.7-2.600 2.400-2.400z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.630 0-12 5.373-12 12 0 5.303 3.438 9.800 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.96-.267 1.980-.399 3-.405 1.020.006 2.040.138 3 .405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.24 2.873.12 3.176.765.84 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.42.36.81 1.096.81 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.850 3.370-1.850 3.601 0 4.267 2.370 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.140 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.200 24 24 23.227 24 22.271V1.729C24 .774 23.200 0 22.222 0h.003z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M9.101 23.691v-7.980H6.627v-3.667h2.474v-1.580c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.680 8.680 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.420-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.350 9.101 11.647Z"/></symbol>
+    <symbol id="i-bluesky" viewBox="0 0 24 24"><path d="M12 10.800c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.080 0 3.768c0 .69.378 5.650.624 6.479.815 2.736 3.713 3.660 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.040-.415.056-3.912.580-7.387 2.005-2.830 7.078 5.013 5.190 6.870-1.113 7.823-4.308.953 3.195 2.050 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.740-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.670.297 5.568-.628 6.383-3.364.246-.828.624-5.790.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.620-4.300 1.240C16.046 4.748 13.087 8.687 12 10.800Z"/></symbol>
+</svg>
 
-<div class="nav-wrapper">
-    <nav class="top-nav" aria-label="Main Navigation">
-        <a href="#" class="nav-link" aria-label="Navigate to Home" onclick="scrollToCoordinates('top'); return false;">Home</a>
-        <a href="#profile" class="nav-link" aria-label="Navigate to Profile section" onclick="openAndJump('profile')">Profile</a>
-        <a href="#expertise" class="nav-link" aria-label="Navigate to Expertise section" onclick="openAndJump('expertise')">Expertise</a>
-        <a href="#projects" class="nav-link" aria-label="Navigate to Projects section" onclick="openAndJump('projects')">Projects</a>
-        <a href="#endorsements" class="nav-link" aria-label="Navigate to Endorsements section" onclick="openAndJump('endorsements')">Endorsements</a>
-        <a href="#capabilities" class="nav-link" aria-label="Navigate to Capabilities section" onclick="openAndJump('capabilities')">Capabilities</a>
-        <a href="#experience" class="nav-link" aria-label="Navigate to Experience section" onclick="openAndJump('experience')">Experience</a>
-        <a href="#education" class="nav-link" aria-label="Navigate to Education section" onclick="openAndJump('education')">Education</a>
-        <a href="https://jahub.juliusalfeche.com" target="_blank" class="nav-link" aria-label="Navigate to Forum">Forum</a>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+<div class="nav-wrap">
+    <nav class="top-nav" aria-label="Main navigation">
+        <a href="#top" class="nav-link" data-nav="top">Home</a>
+        <a href="#profile" class="nav-link" data-nav="profile">Profile</a>
+        <a href="#expertise" class="nav-link" data-nav="expertise">Expertise</a>
+        <a href="#projects" class="nav-link" data-nav="projects">Projects</a>
+        <a href="#endorsements" class="nav-link" data-nav="endorsements">Endorsements</a>
+        <a href="#capabilities" class="nav-link" data-nav="capabilities">Capabilities</a>
+        <a href="#experience" class="nav-link" data-nav="experience">Experience</a>
+        <a href="#education" class="nav-link" data-nav="education">Education</a>
+        <a href="https://jahub.juliusalfeche.com" target="_blank" rel="noopener noreferrer" class="nav-link">Forum</a>
     </nav>
 </div>
 
 <div class="container">
-    <header class="hero-container" role="banner">
-        <img class="profile-photo" src="img/profile.png" alt="Portrait of Julius Alfeche">
-        <h1>Julius Alfeche</h1>
-        <div class="subtitle">Data Analyst</div>
-        <a href="/resume.pdf" download="Julius_Alfeche_Resume.pdf" class="resume-btn" aria-label="Download Julius Alfeche's Resume PDF">
-            <i class="fa-solid fa-arrow-down-to-line" aria-hidden="true"></i> Download Resume</a>
+    <header class="hero">
+        <div class="hero__avatar reveal">
+            <span class="ripple" aria-hidden="true"></span>
+            <span class="ripple ripple--2" aria-hidden="true"></span>
+            <span class="ripple ripple--3" aria-hidden="true"></span>
+            <img class="hero__photo" src="assets/img/profile.webp" width="480" height="480" alt="Portrait of Julius Alfeche" fetchpriority="high">
+        </div>
+        <h1 class="reveal">Julius Alfeche</h1>
+        <p class="hero__role reveal">Data &amp; Operations Analyst</p>
+        <p class="hero__meta reveal"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg> Cebu City, Philippines</p>
+        <p class="hero__tagline reveal">Turning complex, manual processes into automated, structured reporting.</p>
+        <div class="hero__cta reveal">
+            <a href="resume.pdf" download="Julius_Alfeche_Resume.pdf" class="btn btn--primary" aria-label="Download Julius Alfeche's resume as a PDF"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg> Download Resume</a>
+            <a href="mailto:juliusalfeche@pm.me" class="btn"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg> Get in touch</a>
+        </div>
+        <ul class="stats reveal" aria-label="Highlights">
+            <li class="stat"><strong class="stat__num" data-count="7">7</strong><span class="stat__label">Years of experience</span></li>
+            <li class="stat"><strong class="stat__num" data-count="3">3</strong><span class="stat__label">Industries: aviation, healthcare, real estate</span></li>
+            <li class="stat"><strong class="stat__num" data-count-of=".project">4</strong><span class="stat__label">Projects</span></li>
+            <li class="stat"><strong class="stat__num" data-count-of=".slide">6</strong><span class="stat__label">Client endorsements</span></li>
+        </ul>
     </header>
 
-    <main role="main">
-        <div id="profile" class="accordion-section is-open">
-            <button class="accordion-trigger" aria-expanded="true" aria-controls="content-profile" id="trigger-profile" onclick="toggleAccordion(this)">
-                <h2 id="heading-profile"><i class="fa-solid fa-user" aria-hidden="true"></i> Profile</h2>
-                <i class="fa-solid fa-chevron-down chevron-icon" aria-hidden="true"></i>
-            </button>
-            <div class="accordion-content" id="content-profile" role="region" aria-labelledby="heading-profile">
-                <div class="content-inner">
-                    <p class="lead-text">Versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows for U.S.-based clients across aviation, healthcare, and real estate. Specialize in transforming complex, manual processes into automated, structured reporting systems. Proven track record of bridging the gap between raw operational data and executive decision-making while maintaining strict compliance standards.</p>
-                </div>
+    <main id="main">
+        <details class="card reveal" id="profile" name="sections" open>
+            <summary><h2><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg> Profile</h2><svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="card__body">
+                <p class="lead">Versatile Data and Operations Analyst with 7 years of experience steering data-driven workflows for U.S.-based clients across aviation, healthcare, and real estate. Specialize in transforming complex, manual processes into automated, structured reporting systems. Proven track record of bridging the gap between raw operational data and executive decision-making while maintaining strict compliance standards.</p>
             </div>
-        </div>
+        </details>
 
-        <div id="expertise" class="accordion-section">
-            <button class="accordion-trigger" aria-expanded="false" aria-controls="content-expertise" id="trigger-expertise" onclick="toggleAccordion(this)">
-                <h2 id="heading-expertise"><i class="fa-solid fa-brain" aria-hidden="true"></i> Expertise</h2>
-                <i class="fa-solid fa-chevron-down chevron-icon" aria-hidden="true"></i>
-            </button>
-            <div class="accordion-content" id="content-expertise" role="region" aria-labelledby="heading-expertise">
-                <div class="content-inner">
-                    <div class="skills-list-layout">
-                        <div class="skill-group">
-                            <h4>Data &amp; Reporting</h4>
-                            <div class="tags" role="list">
-                                <span class="tag" role="listitem">Excel</span>
-                                <span class="tag" role="listitem">Dashboard Creation</span>
-                                <span class="tag" role="listitem">Performance Tracking</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <h4>Operations &amp; Compliance</h4>
-                            <div class="tags" role="list">
-                                <span class="tag" role="listitem">Process Optimization</span>
-                                <span class="tag" role="listitem">Documentation</span>
-                                <span class="tag" role="listitem">Audit Readiness</span>
-                                <span class="tag" role="listitem">Compliance Monitoring</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <h4>Tools &amp; Platforms</h4>
-                            <div class="tags" role="list">
-                                <span class="tag" role="listitem">Microsoft 365</span>
-                                <span class="tag" role="listitem">Google Workspace</span>
-                                <span class="tag" role="listitem">Salesforce</span>
-                                <span class="tag" role="listitem">Zoho</span>
-                                <span class="tag" role="listitem">WordPress</span>
-                                <span class="tag" role="listitem">Flarum</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <h4>Technical Capabilities</h4>
-                            <div class="tags" role="list">
-                                <span class="tag" role="listitem">Web Scraping</span>
-                                <span class="tag" role="listitem">Online Research</span>
-                                <span class="tag" role="listitem">Web Hosting Management</span>
-                            </div>
-                        </div>
+        <details class="card reveal" id="expertise" name="sections">
+            <summary><h2><svg class="ico" aria-hidden="true"><use href="#i-bulb"/></svg> Expertise</h2><svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="card__body">
+                <div class="skills">
+                    <div class="skill-group">
+                        <h3>Data &amp; Reporting</h3>
+                        <ul class="tags">
+                            <li class="tag">Excel</li>
+                            <li class="tag">Dashboard Creation</li>
+                            <li class="tag">Performance Tracking</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Operations &amp; Compliance</h3>
+                        <ul class="tags">
+                            <li class="tag">Process Optimization</li>
+                            <li class="tag">Documentation</li>
+                            <li class="tag">Audit Readiness</li>
+                            <li class="tag">Compliance Monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools &amp; Platforms</h3>
+                        <ul class="tags">
+                            <li class="tag">Microsoft 365</li>
+                            <li class="tag">Google Workspace</li>
+                            <li class="tag">Salesforce</li>
+                            <li class="tag">Zoho</li>
+                            <li class="tag">WordPress</li>
+                            <li class="tag">Flarum</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Technical Capabilities</h3>
+                        <ul class="tags">
+                            <li class="tag">Web Scraping</li>
+                            <li class="tag">Online Research</li>
+                            <li class="tag">Web Hosting Management</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
 
-        <div id="projects" class="accordion-section">
-            <button class="accordion-trigger" aria-expanded="false" aria-controls="content-projects" id="trigger-projects" onclick="toggleAccordion(this)">
-                <h2 id="heading-projects"><i class="fa-solid fa-code" aria-hidden="true"></i> Projects</h2>
-                <i class="fa-solid fa-chevron-down chevron-icon" aria-hidden="true"></i>
-            </button>
-            <div class="accordion-content" id="content-projects" role="region" aria-labelledby="heading-projects">
-                <div class="content-inner">
-                    <div class="slider-viewport" id="projects-viewport">
-                        <div class="slider-track" id="projects-track">
-                            <a href="https://jahub.juliusalfeche.com/" target="_blank" rel="noopener noreferrer" class="slider-card-item bg-jahub" aria-label="Open jahub in a new tab">
-                                <div>
-                                    <h3>💬 jahub</h3>
-                                    <p>An interactive, community-driven discussion forum seamlessly integrated into my professional portfolio ecosystem, built using Flarum.</p>
-                                </div>
-                                <span class="project-arrow">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
-                            </a>
-                            
-                            <a href="https://juliusalfeche.github.io/audiotest/" target="_blank" rel="noopener noreferrer" class="slider-card-item bg-audio" aria-label="Open Left/Right Audio Test in a new tab">
-                                <div>
-                                    <h3>🎧 Left / Right Audio Test</h3>
-                                    <p>A simple, accessible web-based utility to test the stereo separation of your audio setup (headphones/speakers) using the Web Audio API.</p>
-                                </div>
-                                <span class="project-arrow">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
-                            </a>
-                            
-                            <a href="https://juliusalfeche.github.io/quakesph/" target="_blank" rel="noopener noreferrer" class="slider-card-item bg-quakes" aria-label="Open QuakesPH in a new tab">
-                                <div>
-                                    <h3>🌋 QuakesPH</h3>
-                                    <p>QuakesPH is a progressive web application (PWA) that provides real-time earthquake tracking across the Philippines, powered by live data from the USGS Earthquake API.</p>
-                                </div>
-                                <span class="project-arrow">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
-                            </a>
+        <details class="card reveal" id="projects" name="sections">
+            <summary><h2><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg> Projects</h2><svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="card__body">
+                <div class="projects">
+                    <article class="project">
+                        <div class="project__media"><img src="assets/img/projects/jahub.webp" width="960" height="540" loading="lazy" alt="Screenshot of the JAHub community forum"></div>
+                        <div class="project__body">
+                            <h3><a class="project__link" href="https://jahub.juliusalfeche.com/" target="_blank" rel="noopener noreferrer">JAHub<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3>
+                            <p>An interactive, community-driven discussion forum seamlessly integrated into my professional portfolio ecosystem, built using Flarum.</p>
+                            <div class="project__foot"><ul class="chips"><li>Flarum</li><li>Community</li></ul></div></div>
+                    </article>
 
-                            <a href="https://juliusalfeche.github.io/resume/" target="_blank" rel="noopener noreferrer" class="slider-card-item bg-resume" aria-label="Open Resume in a new tab">
-                                <div>
-                                    <h3>💼 Resume</h3>
-                                    <p>A digital, interactive version of my professional resume built with modern web technologies for a clean, accessible viewing experience across all devices.</p>
-                                </div>
-                                <span class="project-arrow">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
-                            </a>
+                    <article class="project">
+                        <div class="project__media"><img src="assets/img/projects/audiotest.webp" width="960" height="540" loading="lazy" alt="Screenshot of the Left or Right? audio test"></div>
+                        <div class="project__body">
+                            <h3><a class="project__link" href="https://juliusalfeche.github.io/audiotest/" target="_blank" rel="noopener noreferrer">Left or Right?<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3>
+                            <p>A simple, accessible web tool that checks your headphones or speakers by playing a short tone in the left, right, or both channels, using the Web Audio API.</p>
+                            <div class="project__foot"><ul class="chips"><li>Web Audio API</li><li>PWA</li><li>Accessible</li></ul><a class="project__src" href="https://github.com/juliusalfeche/audiotest" target="_blank" rel="noopener noreferrer"><svg class="ico ico--fill" aria-hidden="true"><use href="#i-github"/></svg> Source<span class="sr-only"> code on GitHub (opens in a new tab)</span></a></div>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__media"><img src="assets/img/projects/quakesph.webp" width="960" height="540" loading="lazy" alt="QuakesPH cover art: live earthquake tracker for the Philippines"></div>
+                        <div class="project__body">
+                            <h3><a class="project__link" href="https://juliusalfeche.github.io/quakesph/" target="_blank" rel="noopener noreferrer">QuakesPH<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3>
+                            <p>A progressive web app that tracks earthquakes across the Philippines on an interactive map, with live data from USGS and EMSC.</p>
+                            <div class="project__foot"><ul class="chips"><li>PWA</li><li>Leaflet</li><li>USGS · EMSC</li></ul><a class="project__src" href="https://github.com/juliusalfeche/quakesph" target="_blank" rel="noopener noreferrer"><svg class="ico ico--fill" aria-hidden="true"><use href="#i-github"/></svg> Source<span class="sr-only"> code on GitHub (opens in a new tab)</span></a></div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__media"><img src="assets/img/projects/resume.webp" width="960" height="540" loading="lazy" alt="Cover art of this portfolio website"></div>
+                        <div class="project__body">
+                            <h3><a class="project__link" href="https://github.com/juliusalfeche/resume" target="_blank" rel="noopener noreferrer">This Portfolio<svg class="ico" aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (source code on GitHub, opens in a new tab)</span></a></h3>
+                            <p>A digital, interactive version of my professional resume, built with plain HTML, CSS and JavaScript: fast on any device, with no frameworks and no trackers.</p>
+                            <div class="project__foot"><ul class="chips"><li>HTML · CSS · JS</li><li>No trackers</li></ul></div></div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </details>
 
-        <div id="endorsements" class="accordion-section">
-            <button class="accordion-trigger" aria-expanded="false" aria-controls="content-endorsements" id="trigger-endorsements" onclick="toggleAccordion(this)">
-                <h2 id="heading-endorsements"><i class="fa-solid fa-quote-left" aria-hidden="true"></i> Endorsements</h2>
-                <i class="fa-solid fa-chevron-down chevron-icon" aria-hidden="true"></i>
-            </button>
-            <div class="accordion-content" id="content-endorsements" role="region" aria-labelledby="heading-endorsements">
-                <div class="content-inner">
-                    <div class="slider-viewport" id="reviews-viewport">
-                        <div class="slider-track" id="reviews-track">
-                            
-                            <div class="slider-card-item">
-                                <p class="quote-body">Thank you again for your partnership, and we look forward to exploring ways to work together again in the future. Julius, you've been tremendous partner. Your contributions to Fly Louie have been greatly appreciated.</p>
-                                <div class="client-profile">
-                                    <img class="client-avatar" src="img/julia.png" alt="Portrait of Julia Takeda">
-                                    <div class="client-meta">
-                                        <h5>Julia Takeda</h5>
-                                        <span><i>Founder & CEO</i> <br> <b>Fly Louie</b></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="slider-card-item">
-                                <p class="quote-body">Julius' longevity with us. He does good work, and because he's been with us for several years he has become a valuable source of institutional memory as well. We've had Julius assigned to our account for several years now, and I never expected how helpful it would be to have the same person assigned to our account for that entire time. He just understands so much about our business at this point, and it makes him a go-to resource for us. We prefer turning to Julius than to some of our own employees because he just knows our business so well by now. He's great and we are so grateful to him.</p>
-                                <div class="client-profile">
-                                    <img class="client-avatar" src="img/eytan.jpg" alt="Portrait of Eytan Kurshan">
-                                    <div class="client-meta">
-                                        <h5>Eytan Kurshan</h5>
-                                        <span><i>COO</i> <br> <b>Fly Louie</b></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="slider-card-item">
-                                <p class="quote-body">You've been a huge help, and I really appreciate everything you've done over the past couple of years! I know you'll still be working on other things, so thanks again for all your support.</p>
-                                <div class="client-profile">
-                                    <img class="client-avatar" src="img/laura.png" alt="Portrait of Laura Polin">
-                                    <div class="client-meta">
-                                        <h5>Laura Polin</h5>
-                                        <span><i>Fuel Program General Manager</i> <br> <b>Fly Louie</b></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="slider-card-item">
-                                <p class="quote-body">He does a great job, we really enjoy working with Julius! Accuracy of the work and the ability to seek clarification and flag items that fall outside of regular workflow/parameters.</p>
-                                <div class="client-profile">
-                                    <img class="client-avatar" src="img/matt.jpg" alt="Portrait of Matt Dalton">
-                                    <div class="client-meta">
-                                        <h5>Matt Dalton</h5>
-                                        <span><i>Sourcing & Scheduling Director</i> <br> <b>Magellan Jets</b></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="slider-card-item">
-                                <p class="quote-body">Julius has always been reliable and capable of completing needed tasks for us. I appreciate the consistent availability and quality of work. Julius specifically has been very engaged in tasks I've given him and always asks questions and reviews results with me when starting a new project. It gives me confidence that he is completing the work to the same standard I would if I had to do it myself.</p>
-                                <div class="client-profile">
-                                    <img class="client-avatar" src="img/liberty.jpg" alt="Portrait of Liberty Feliciano">
-                                    <div class="client-meta">
-                                        <h5>Liberty Feliciano</h5>
-                                        <span><i>Aircraft Scheduling Specialist</i> <br> <b>Magellan Jets</b></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="slider-card-item">
-                                <p class="quote-body">Improved reliability and accountability in the team and learned very difficult clients. A good listener and is focused when editing live batches.</p>
-                                <div class="client-profile">
-                                    <img class="client-avatar" src="img/owen.jpg" alt="Portrait of Owen Beluan">
-                                    <div class="client-meta">
-                                        <h5>Owen Beluan</h5>
-                                        <span><i>Shift Manager</i> <br> <b>PhotoUp</b></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+        <details class="card reveal" id="endorsements" name="sections">
+            <summary><h2><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg> Endorsements</h2><svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="card__body">
+                <div class="carousel" id="endorse-carousel" role="region" aria-roledescription="carousel" aria-label="Client endorsements">
+                    <ul class="carousel__viewport" tabindex="0" aria-label="Endorsements. Use the arrow keys, swipe, or the buttons below.">
+                        <li class="slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                            <figure class="quote">
+                                <blockquote><p>Thank you again for your partnership, and we look forward to exploring ways to work together again in the future. Julius, you’ve been tremendous partner. Your contributions to Fly Louie have been greatly appreciated.</p></blockquote>
+                                <figcaption><img class="avatar" src="assets/img/clients/julia.webp" width="70" height="70" loading="lazy" alt=""><span class="who"><strong>Julia Takeda</strong><span>Founder &amp; CEO</span><b>Fly Louie</b></span></figcaption>
+                            </figure>
+                        </li>
+                        <li class="slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+                            <figure class="quote">
+                                <blockquote><p>Julius’ longevity with us. He does good work, and because he’s been with us for several years he has become a valuable source of institutional memory as well. We’ve had Julius assigned to our account for several years now, and I never expected how helpful it would be to have the same person assigned to our account for that entire time. He just understands so much about our business at this point, and it makes him a go-to resource for us. We prefer turning to Julius than to some of our own employees because he just knows our business so well by now. He’s great and we are so grateful to him.</p></blockquote>
+                                <figcaption><img class="avatar" src="assets/img/clients/eytan.webp" width="70" height="70" loading="lazy" alt=""><span class="who"><strong>Eytan Kurshan</strong><span>COO</span><b>Fly Louie</b></span></figcaption>
+                            </figure>
+                        </li>
+                        <li class="slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+                            <figure class="quote">
+                                <blockquote><p>You’ve been a huge help, and I really appreciate everything you’ve done over the past couple of years! I know you’ll still be working on other things, so thanks again for all your support.</p></blockquote>
+                                <figcaption><img class="avatar" src="assets/img/clients/laura.webp" width="70" height="70" loading="lazy" alt=""><span class="who"><strong>Laura Polin</strong><span>Fuel Program General Manager</span><b>Fly Louie</b></span></figcaption>
+                            </figure>
+                        </li>
+                        <li class="slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+                            <figure class="quote">
+                                <blockquote><p>He does a great job, we really enjoy working with Julius! Accuracy of the work and the ability to seek clarification and flag items that fall outside of regular workflow/parameters.</p></blockquote>
+                                <figcaption><img class="avatar" src="assets/img/clients/matt.webp" width="70" height="70" loading="lazy" alt=""><span class="who"><strong>Matt Dalton</strong><span>Sourcing &amp; Scheduling Director</span><b>Magellan Jets</b></span></figcaption>
+                            </figure>
+                        </li>
+                        <li class="slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+                            <figure class="quote">
+                                <blockquote><p>Julius has always been reliable and capable of completing needed tasks for us. I appreciate the consistent availability and quality of work. Julius specifically has been very engaged in tasks I’ve given him and always asks questions and reviews results with me when starting a new project. It gives me confidence that he is completing the work to the same standard I would if I had to do it myself.</p></blockquote>
+                                <figcaption><img class="avatar" src="assets/img/clients/liberty.webp" width="70" height="70" loading="lazy" alt=""><span class="who"><strong>Liberty Feliciano</strong><span>Aircraft Scheduling Specialist</span><b>Magellan Jets</b></span></figcaption>
+                            </figure>
+                        </li>
+                        <li class="slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+                            <figure class="quote">
+                                <blockquote><p>Improved reliability and accountability in the team and learned very difficult clients. A good listener and is focused when editing live batches.</p></blockquote>
+                                <figcaption><img class="avatar" src="assets/img/clients/owen.webp" width="70" height="70" loading="lazy" alt=""><span class="who"><strong>Owen Beluan</strong><span>Shift Manager</span><b>PhotoUp</b></span></figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <div class="carousel__controls" hidden>
+                        <button type="button" class="icon-btn" data-prev aria-label="Previous endorsement"><svg class="ico" aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+                        <div class="carousel__dots" role="group" aria-label="Choose an endorsement"></div>
+                        <button type="button" class="icon-btn" data-next aria-label="Next endorsement"><svg class="ico" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
                     </div>
+                    <p class="carousel__count" aria-live="polite" hidden></p>
                 </div>
             </div>
-        </div>
+        </details>
 
-        <div id="capabilities" class="accordion-section">
-            <button class="accordion-trigger" aria-expanded="false" aria-controls="content-capabilities" id="trigger-capabilities" onclick="toggleAccordion(this)">
-                <h2 id="heading-capabilities"><i class="fa-solid fa-list-check" aria-hidden="true"></i> Capabilities</h2>
-                <i class="fa-solid fa-chevron-down chevron-icon" aria-hidden="true"></i>
-            </button>
-            <div class="accordion-content" id="content-capabilities" role="region" aria-labelledby="heading-capabilities">
-                <div class="content-inner">
-                    <div class="capabilities-grid">
-                        
-                        <!-- Computer Repair Block -->
-                        <div class="capability-block nested-accordion">
-                            <button class="nested-accordion-trigger" aria-expanded="false" onclick="toggleNestedAccordion(this)">
-                                <div class="cap-header-left">
-                                    <h3><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Windows Desktop/Laptop Repair</h3>
-                                    <span class="cap-badge">Hardware/Software</span>
-                                </div>
-                                <i class="fa-solid fa-chevron-down nested-chevron" aria-hidden="true"></i>
-                            </button>
-                            
-                            <div class="nested-accordion-content">
-                                <div class="nested-content-inner">
-                                    <div class="cap-text-block">
-                                        <p class="cap-desc">There are few things more aggravating than having your desktop or laptop fail precisely when you need it most. Whether you're facing a tight deadline for a final paper, preparing for a critical conference, or simply needing to get your work done, computer repair becomes absolutely essential.</p>
-                                        <p class="cap-desc">When seeking professional help, be wary of technicians who rely on simple "tune-ups". While these may offer a temporary fix, they are often insufficient and don't prevent the same problems from quickly recurring. For both the convenience-driven laptop user and the desktop owner, the need is the same: timely, efficient, and comprehensive repair that includes fully securing your computer to prevent future breakdowns.</p>
-                                    </div>
-                            
-                                    <h4 class="cap-subheading"><i class="fa-solid fa-tools" aria-hidden="true"></i> Repair & Support Services</h4>
-                                    <ul class="cap-list" role="list">
-                                        <li role="listitem"><strong>Technical Support</strong></li>
-                                        <li role="listitem"><strong>Repair / Troubleshooting</strong></li>
-                                        <li role="listitem"><strong>Setup / Installation</strong></li>
-                                        <li role="listitem"><strong>Hardware / Software Upgrades / Installation</strong></li>
-                                        <li role="listitem"><strong>Operating System Updates</strong></li>
-                                        <li role="listitem"><strong>Anti-Virus Installation / Removal</strong></li>
-                                        <li role="listitem"><strong>Motherboard Replacement</strong></li>
-                                        <li role="listitem"><strong>Memory Upgrades</strong></li>
-                                    </ul>
-                            
-                                    <div class="cap-text-block" style="margin-top: 1.5rem;">
-                                        <p class="cap-desc">Computers running any operating system, especially those with constant internet access, require frequent maintenance to stay secure. New vulnerabilities are constantly discovered and patched, making it a priority for every user to keep their system updated with the latest service packs and critical updates.</p>
-                                        <p class="cap-desc">When a problem arises, users often consider returning their machine to the manufacturer, particularly if it's still under warranty. While manufacturer repair is often the ideal choice in terms of expertise, the major drawback is the significant downtime waiting for the device to be shipped, serviced, and returned.</p>
-                                        <p class="cap-desc">The reality is that most modern desktops and laptops, regardless of brand, can be competently serviced by any qualified local technician. Computer parts are generally universal or easily substituted with compatible replacements. This leads to the key question: who should you trust? Finding a truly qualified specialist who can handle your desktop or laptop repair in a professional, competent, and efficient manner can be challenging. I am here to offer that solution.</p>
-                                    </div>
-                                </div>
+        <details class="card reveal" id="capabilities" name="sections">
+            <summary><h2><svg class="ico" aria-hidden="true"><use href="#i-checklist"/></svg> Capabilities</h2><svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="card__body">
+                <div class="caps">
+                    <details class="cap" name="capabilities">
+                        <summary>
+                            <span class="cap__head"><h3><svg class="ico" aria-hidden="true"><use href="#i-wrench"/></svg> Windows Desktop/Laptop Repair</h3><span class="badge">Hardware/Software</span></span>
+                            <svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+                        </summary>
+                        <div class="cap__body">
+                            <div class="prose">
+                                <p>There are few things more aggravating than having your desktop or laptop fail precisely when you need it most. Whether you’re facing a tight deadline for a final paper, preparing for a critical conference, or simply needing to get your work done, computer repair becomes absolutely essential.</p>
+                                <p>When seeking professional help, be wary of technicians who rely on simple “tune-ups”. While these may offer a temporary fix, they are often insufficient and don’t prevent the same problems from quickly recurring. For both the convenience-driven laptop user and the desktop owner, the need is the same: timely, efficient, and comprehensive repair that includes fully securing your computer to prevent future breakdowns.</p>
                             </div>
-                        </div>
-                    
-                        <!-- Remote Setup Block -->
-                        <div class="capability-block nested-accordion">
-                            <button class="nested-accordion-trigger" aria-expanded="false" onclick="toggleNestedAccordion(this)">
-                                <div class="cap-header-left">
-                                    <h3><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Remote Desktop Management</h3>
-                                    <span class="cap-badge">Administration</span>
-                                </div>
-                                <i class="fa-solid fa-chevron-down nested-chevron" aria-hidden="true"></i>
-                            </button>
-                            
-                            <div class="nested-accordion-content">
-                                <div class="nested-content-inner">
-                                    <p class="cap-desc">Numerous IT support tasks for computers and servers are now manageable remotely, meaning a technician doesn’t have to physically be there.</p>
-                            
-                                    <h4 class="cap-subheading"><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Key Advantages of Remote Support</h4>
-                                    <ul class="cap-list" role="list">
-                                        <li role="listitem"><strong>Improved Support Quality:</strong> Technicians can directly see the user's screen, which avoids the confusion and difficulty of users trying to describe visual problems over the phone.</li>
-                                        <li role="listitem"><strong>Faster Resolution:</strong> Enhanced technician availability and fewer scheduling conflicts lead to quicker problem resolution, often immediately.</li>
-                                        <li role="listitem"><strong>Reduced Costs:</strong> Eliminating travel time lowers the overall cost of support.</li>
-                                        <li role="listitem"><strong>Timely Maintenance:</strong> Scheduled system tasks (like software and virus definition updates, backup processes) can be executed promptly, ensuring your systems remain secure and protected.</li>
-                                    </ul>
-                            
-                                    <h4 class="cap-subheading" style="margin-top: 2rem;"><i class="fa-solid fa-server" aria-hidden="true"></i> Setting Up Remote Access</h4>
-                                    <ul class="cap-list" role="list">
-                                        <li role="listitem"><strong>Install Software:</strong> Specialized software must be installed on every PC and server that requires remote accessibility.</li>
-                                        <li role="listitem"><strong>Configure Firewall:</strong> You might need to adjust your firewall settings to permit incoming network traffic on specific ports.</li>
-                                    </ul>
-                            
-                                    <div style="margin-top: 2.5rem; display: flex; justify-content: center;">
-                                        <a href="https://get.teamviewer.com/juliusalfeche" class="resume-btn" aria-label="Download TeamViewerQS">
-                                            <i class="fa-solid fa-cloud-arrow-down" aria-hidden="true"></i> Download TeamViewerQS
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <!-- Web Engineering Block -->
-                        <div class="capability-block nested-accordion">
-                            <button class="nested-accordion-trigger" aria-expanded="false" onclick="toggleNestedAccordion(this)">
-                                <div class="cap-header-left">
-                                    <h3><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Web Design & Development</h3>
-                                    <span class="cap-badge">Custom Dev</span>
-                                </div>
-                                <i class="fa-solid fa-chevron-down nested-chevron" aria-hidden="true"></i>
-                            </button>
-                            
-                            <div class="nested-accordion-content">
-                                <div class="nested-content-inner">
-                                    <div class="cap-text-block">
-                                        <p class="cap-desc">Creating effective, appealing websites that drive business success is a specialized talent. While many companies can build a basic site today, few can deliver one that actually achieves its goals.</p>
-                                        <p class="cap-desc">In web design, success means achieving two things: attracting the right audience (targeted traffic) and effectively communicating your core message or completing a transaction (sale).</p>
-                                        <p class="cap-desc">This requires developing smart, user-focused features that are both easy to use and advanced. Furthermore, pages must load quickly and be easily found by search engines.</p>
-                                    </div>
-                            
-                                    <h4 class="cap-subheading"><i class="fa-solid fa-toolbox" aria-hidden="true"></i> Maintenance</h4>
-                                    <p class="cap-desc">As your business evolves, your website will need to keep pace. We offer comprehensive, budget-friendly maintenance services with quick turnaround times so you can delegate website tasks and dedicate more time to running your business.</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="experience" class="accordion-section">
-            <button class="accordion-trigger" aria-expanded="false" aria-controls="content-experience" id="trigger-experience" onclick="toggleAccordion(this)">
-                <h2 id="heading-experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experience</h2>
-                <i class="fa-solid fa-chevron-down chevron-icon" aria-hidden="true"></i>
-            </button>
-            <div class="accordion-content" id="content-experience" role="region" aria-labelledby="heading-experience">
-                <div class="content-inner">
-                    <div class="timeline-structure">
-                        
-                        <div class="timeline-node">
-                            <div class="brand-container">
-                                <img src="img/op360.png" alt="OfficePartners360 logo" class="brand-logo">
-                                <div class="brand-details">
-                                    <div class="node-header">
-                                        <h3>Data Analyst</h3>
-                                        <span class="node-duration">Mar 2019 — Present</span>
-                                    </div>
-                                    <div class="node-firm">OfficePartners360 Inc. — Cebu City, Philippines</div>
-                                </div>
-                            </div>
-                            <p>Supported U.S. clients across aviation and healthcare with data analysis, compliance management, and operational reporting.</p>
-                            
-                            <div class="nested-subsections">
-                                <div>
-                                    <div class="node-header">
-                                        <h4 class="nested-role-title">Private Aviation Client (MA, USA) — Operations Analyst</h4>
-                                        <span class="node-duration">2024 — Present</span>
-                                    </div>
-                                    <ul class="node-bullets" role="list">
-                                        <li role="listitem">Streamlined invoice management and fuel rate reporting by introducing standardized tracking templates, directly minimizing data entry errors and accelerating executive decision-making cycles.</li>
-                                    </ul>
-                                </div>
-
-                                <div>
-                                    <div class="node-header">
-                                        <h4 class="nested-role-title">Aviation Consultant Client (NY, USA) — Operations Analyst</h4>
-                                        <span class="node-duration">2022 — 2024</span>
-                                    </div>
-                                    <ul class="node-bullets" role="list">
-                                        <li role="listitem">Redesigned insurance and aircraft tail management processes.</li>
-                                    </ul>
-                                </div>
-
-                                <div>
-                                    <div class="node-header">
-                                        <h4 class="nested-role-title">Healthcare Institution Client (FL, USA) — Data Analyst</h4>
-                                        <span class="node-duration">2019 — 2024</span>
-                                    </div>
-                                    <ul class="node-bullets" role="list">
-                                        <li role="listitem">Redesigned data workflows for admissions and advisor performance, effectively eliminating redundant processing steps and establishing a more reliable audit-ready framework.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-node">
-                            <div class="brand-container">
-                                <img src="img/pu.png" alt="PhotoUp logo" class="brand-logo">
-                                <div class="brand-details">
-                                    <div class="node-header">
-                                        <h3>Photo Editor</h3>
-                                        <span class="node-duration">May 2017 — Nov 2017</span>
-                                    </div>
-                                    <div class="node-firm">PhotoUp Inc. — Cebu City, Philippines</div>
-                                </div>
-                            </div>
-                            <ul class="node-bullets" role="list">
-                                <li role="listitem">Edited and enhanced real estate photos for clients in North America, Europe, and Australia, ensuring high-quality output and on-time delivery.</li>
-                                <li role="listitem">Contributed to virtual staging projects that improved client satisfaction and accelerated property listing turnaround.</li>
+                            <h4 class="sub"><svg class="ico" aria-hidden="true"><use href="#i-wrench"/></svg> Repair &amp; Support Services</h4>
+                            <ul class="checks">
+                                <li><strong>Technical Support</strong></li>
+                                <li><strong>Repair / Troubleshooting</strong></li>
+                                <li><strong>Setup / Installation</strong></li>
+                                <li><strong>Hardware / Software Upgrades / Installation</strong></li>
+                                <li><strong>Operating System Updates</strong></li>
+                                <li><strong>Anti-Virus Installation / Removal</strong></li>
+                                <li><strong>Motherboard Replacement</strong></li>
+                                <li><strong>Memory Upgrades</strong></li>
                             </ul>
+                            <div class="prose prose--spaced">
+                                <p>Computers running any operating system, especially those with constant internet access, require frequent maintenance to stay secure. New vulnerabilities are constantly discovered and patched, making it a priority for every user to keep their system updated with the latest service packs and critical updates.</p>
+                                <p>When a problem arises, users often consider returning their machine to the manufacturer, particularly if it’s still under warranty. While manufacturer repair is often the ideal choice in terms of expertise, the major drawback is the significant downtime waiting for the device to be shipped, serviced, and returned.</p>
+                                <p>The reality is that most modern desktops and laptops, regardless of brand, can be competently serviced by any qualified local technician. Computer parts are generally universal or easily substituted with compatible replacements. This leads to the key question: who should you trust? Finding a truly qualified specialist who can handle your desktop or laptop repair in a professional, competent, and efficient manner can be challenging. I am here to offer that solution.</p>
+                            </div>
                         </div>
+                    </details>
 
-                    </div>
+                    <details class="cap" name="capabilities">
+                        <summary>
+                            <span class="cap__head"><h3><svg class="ico" aria-hidden="true"><use href="#i-monitor"/></svg> Remote Desktop Management</h3><span class="badge">Administration</span></span>
+                            <svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+                        </summary>
+                        <div class="cap__body">
+                            <div class="prose"><p>Numerous IT support tasks for computers and servers are now manageable remotely, meaning a technician doesn’t have to physically be there.</p></div>
+                            <h4 class="sub"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg> Key Advantages of Remote Support</h4>
+                            <ul class="checks checks--wide">
+                                <li><strong>Improved Support Quality:</strong> Technicians can directly see the user’s screen, which avoids the confusion and difficulty of users trying to describe visual problems over the phone.</li>
+                                <li><strong>Faster Resolution:</strong> Enhanced technician availability and fewer scheduling conflicts lead to quicker problem resolution, often immediately.</li>
+                                <li><strong>Reduced Costs:</strong> Eliminating travel time lowers the overall cost of support.</li>
+                                <li><strong>Timely Maintenance:</strong> Scheduled system tasks (like software and virus definition updates, backup processes) can be executed promptly, ensuring your systems remain secure and protected.</li>
+                            </ul>
+                            <h4 class="sub"><svg class="ico" aria-hidden="true"><use href="#i-monitor"/></svg> Setting Up Remote Access</h4>
+                            <ul class="checks checks--wide">
+                                <li><strong>Install Software:</strong> Specialized software must be installed on every PC and server that requires remote accessibility.</li>
+                                <li><strong>Configure Firewall:</strong> You might need to adjust your firewall settings to permit incoming network traffic on specific ports.</li>
+                            </ul>
+                            <div class="cap__cta">
+                                <a href="https://get.teamviewer.com/juliusalfeche" target="_blank" rel="noopener noreferrer" class="btn btn--primary" aria-label="Download TeamViewerQS (opens in a new tab)"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg> Download TeamViewerQS</a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="cap" name="capabilities">
+                        <summary>
+                            <span class="cap__head"><h3><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg> Web Design &amp; Development</h3><span class="badge">Custom Dev</span></span>
+                            <svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+                        </summary>
+                        <div class="cap__body">
+                            <div class="prose">
+                                <p>Creating effective, appealing websites that drive business success is a specialized talent. While many companies can build a basic site today, few can deliver one that actually achieves its goals.</p>
+                                <p>In web design, success means achieving two things: attracting the right audience (targeted traffic) and effectively communicating your core message or completing a transaction (sale).</p>
+                                <p>This requires developing smart, user-focused features that are both easy to use and advanced. Furthermore, pages must load quickly and be easily found by search engines.</p>
+                            </div>
+                            <h4 class="sub"><svg class="ico" aria-hidden="true"><use href="#i-wrench"/></svg> Maintenance</h4>
+                            <div class="prose"><p>As your business evolves, your website will need to keep pace. We offer comprehensive, budget-friendly maintenance services with quick turnaround times so you can delegate website tasks and dedicate more time to running your business.</p></div>
+                        </div>
+                    </details>
                 </div>
             </div>
-        </div>
+        </details>
 
-        <div id="education" class="accordion-section">
-            <button class="accordion-trigger" aria-expanded="false" aria-controls="content-education" id="trigger-education" onclick="toggleAccordion(this)">
-                <h2 id="heading-education"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Education</h2>
-                <i class="fa-solid fa-chevron-down chevron-icon" aria-hidden="true"></i>
-            </button>
-            <div class="accordion-content" id="content-education" role="region" aria-labelledby="heading-education">
-                <div class="content-inner">
-                    
-                    <div class="generic-row">
-                        <img src="img/act.png" alt="Asian College of Technology logo" class="brand-logo">
-                        <div class="brand-details">
-                            <div class="node-header">
-                                <h3>Bachelor of Science in Computer Engineering</h3>
-                                <span class="node-duration">Mar 2015</span>
+        <details class="card reveal" id="experience" name="sections">
+            <summary><h2><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg> Experience</h2><svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="card__body">
+                <ol class="timeline">
+                    <li class="node">
+                        <div class="brand">
+                            <img class="logo" src="assets/img/logos/op360.webp" width="96" height="96" loading="lazy" alt="OfficePartners360 logo">
+                            <div class="brand__text">
+                                <div class="row"><h3>Data Analyst</h3><span class="when">Mar 2019 — Present</span></div>
+                                <p class="firm">OfficePartners360 Inc. — Cebu City, Philippines</p>
                             </div>
-                            <div class="firm-location">Asian College of Technology — Cebu City, Philippines</div>
+                        </div>
+                        <p class="node__intro">Supported U.S. clients across aviation and healthcare with data analysis, compliance management, and operational reporting.</p>
+                        <div class="roles">
+                            <div class="role">
+                                <div class="row"><h4>Private Aviation Client (MA, USA) — Operations Analyst</h4><span class="when">2024 — Present</span></div>
+                                <ul class="bullets"><li>Streamlined invoice management and fuel rate reporting by introducing standardized tracking templates, directly minimizing data entry errors and accelerating executive decision-making cycles.</li></ul>
+                            </div>
+                            <div class="role">
+                                <div class="row"><h4>Aviation Consultant Client (NY, USA) — Operations Analyst</h4><span class="when">2022 — 2024</span></div>
+                                <ul class="bullets"><li>Redesigned insurance and aircraft tail management processes.</li></ul>
+                            </div>
+                            <div class="role">
+                                <div class="row"><h4>Healthcare Institution Client (FL, USA) — Data Analyst</h4><span class="when">2019 — 2024</span></div>
+                                <ul class="bullets"><li>Redesigned data workflows for admissions and advisor performance, effectively eliminating redundant processing steps and establishing a more reliable audit-ready framework.</li></ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="node">
+                        <div class="brand">
+                            <img class="logo" src="assets/img/logos/pu.webp" width="96" height="96" loading="lazy" alt="PhotoUp logo">
+                            <div class="brand__text">
+                                <div class="row"><h3>Photo Editor</h3><span class="when">May 2017 — Nov 2017</span></div>
+                                <p class="firm">PhotoUp Inc. — Cebu City, Philippines</p>
+                            </div>
+                        </div>
+                        <ul class="bullets">
+                            <li>Edited and enhanced real estate photos for clients in North America, Europe, and Australia, ensuring high-quality output and on-time delivery.</li>
+                            <li>Contributed to virtual staging projects that improved client satisfaction and accelerated property listing turnaround.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="card reveal" id="education" name="sections">
+            <summary><h2><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg> Education</h2><svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="card__body">
+                <div class="edu">
+                    <div class="brand">
+                        <img class="logo" src="assets/img/logos/act.webp" width="96" height="96" loading="lazy" alt="Asian College of Technology logo">
+                        <div class="brand__text">
+                            <div class="row"><h3>Bachelor of Science in Computer Engineering</h3><span class="when">Mar 2015</span></div>
+                            <p class="firm">Asian College of Technology — Cebu City, Philippines</p>
                         </div>
                     </div>
-
-                    <div class="generic-row">
-                        <img src="img/dmdp.png" alt="DMDP logo" class="brand-logo">
-                        <div class="brand-details">
-                            <div class="node-header align-start">
-                                <ul class="cap-list course-list" role="list">
-                                    <li role="listitem"><strong>Computer Systems Servicing (NC II)</strong></li>
-                                    <li role="listitem"><strong>Electronic Products Assembly & Servicing (NC II)</strong></li>
+                    <div class="brand">
+                        <img class="logo" src="assets/img/logos/dmdp.webp" width="96" height="96" loading="lazy" alt="DMDP logo">
+                        <div class="brand__text">
+                            <div class="row">
+                                <ul class="courses">
+                                    <li>Computer Systems Servicing (NC II)</li>
+                                    <li>Electronic Products Assembly &amp; Servicing (NC II)</li>
                                 </ul>
-                                <span class="node-duration">Aug 2018</span>
+                                <span class="when">Aug 2018</span>
                             </div>
-                            <div class="firm-location">Department of Manpower Development and Placement – Cebu City, Philippines</div>
+                            <p class="firm">Department of Manpower Development and Placement — Cebu City, Philippines</p>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </details>
     </main>
 
-    <div class="navigation-dock">
-        <button id="scroll-top-btn" class="dock-action" aria-label="Scroll to Top" onclick="scrollToCoordinates('top')" title="Scroll to Top">
-            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-        </button>
-        <button class="dock-action theme-toggle" id="theme-switcher" aria-label="Switch Theme" onclick="toggleTheme()" title="Switch Theme">
-            <i class="fa-solid fa-moon" aria-hidden="true"></i>
-        </button>
-    </div>
-
-    <footer role="contentinfo">
-        <div class="footer-social-cluster">
-            <a href="mailto:juliusalfeche@pm.me" class="footer-icon-link" aria-label="Send an email to Julius"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
-            <a href="https://linkedin.com/in/juliusalfeche/" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Connect on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-            <a href="https://bsky.app/profile/juliusalfeche.com" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Follow on Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/JuliusAlfeche" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Follow on Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://github.com/juliusalfeche" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="View GitHub Repository"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-        </div>
-        <p class="footer-legal-text">🇵🇭 &copy; 2026 Julius Alfeche 🇵🇭</p>
+    <footer class="foot">
+        <ul class="social">
+            <li><a href="mailto:juliusalfeche@pm.me" aria-label="Send an email to Julius"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+            <li><a href="https://linkedin.com/in/juliusalfeche/" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn (opens in a new tab)"><svg class="ico ico--fill" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://bsky.app/profile/juliusalfeche.com" target="_blank" rel="noopener noreferrer" aria-label="Follow on Bluesky (opens in a new tab)"><svg class="ico ico--fill" aria-hidden="true"><use href="#i-bluesky"/></svg></a></li>
+            <li><a href="https://www.facebook.com/JuliusAlfeche" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook (opens in a new tab)"><svg class="ico ico--fill" aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+            <li><a href="https://github.com/juliusalfeche" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile (opens in a new tab)"><svg class="ico ico--fill" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+        </ul>
+        <p class="legal">
+            <svg class="flag" viewBox="0 0 22 14" width="22" height="14" aria-hidden="true" focusable="false"><rect width="22" height="7" fill="#0038A8"/><rect y="7" width="22" height="7" fill="#CE1126"/><path d="M0 0L11 7L0 14Z" fill="#FFFFFF"/><circle cx="3.600" cy="7" r="1.500" fill="#FCD116"/></svg>
+            &copy; <span id="year">2026</span> Julius Alfeche
+        </p>
+        <p class="legal legal--small">Built with plain HTML, CSS and JavaScript. No trackers, no cookies.</p>
     </footer>
 
+    <div class="dock">
+        <button type="button" class="dock__btn" id="scroll-top" aria-label="Scroll to top" title="Scroll to top"><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+        <button type="button" class="dock__btn" id="theme-toggle" aria-label="Switch to light theme" title="Switch theme">
+            <svg class="ico ico-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+            <svg class="ico ico-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+    </div>
 </div>
 </body>
 </html>
