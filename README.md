@@ -44,13 +44,6 @@ resume/
     └── icons/           favicon and app icons
 ```
 
-## Updating the content
-
-- **Text, projects, endorsements, jobs:** edit `index.html`. Each section is a clearly marked block.
-- **Years of experience / industries:** change the `data-count` numbers in the "Highlights" list near the top. The project and endorsement counts update by themselves.
-- **Colors:** change the variables at the top of `assets/css/style.css`.
-- The footer year updates itself.
-
 ## Credits
 
 Built by Julius Alfeche with plain HTML, CSS and JavaScript. No frameworks, no build step.
