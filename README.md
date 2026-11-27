@@ -43,7 +43,3 @@ resume/
     ├── img/             portrait, logos, client photos, project cards, social cover
     └── icons/           favicon and app icons
 ```
-
-## Credits
-
-Built by Julius Alfeche with plain HTML, CSS and JavaScript. No frameworks, no build step.
